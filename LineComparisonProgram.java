@@ -2,14 +2,15 @@ package linecomparison;
 
 import java.util.Scanner;
 
+//class Declaration
 public class LineComparisonProgram {
+	// variables
+	private static final Scanner sc = new Scanner(System.in);
+	static double x1, x2, y1, y2, a1, b1, a2, b2;
+	static double length_Of_Line1, length_Of_Line2;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("Welcome to Line Comparison Computation Program");
-		double x1, x2, y1, y2, a1, b1, a2, b2;
-		double length_Of_Line1, length_Of_Line2;
-		Scanner sc = new Scanner(System.in);
+	// method
+	public void compareTo() {
 		System.out.println("enter x1 point\n");
 		x1 = sc.nextInt();
 		System.out.println("enter y1 point\n");
@@ -43,6 +44,14 @@ public class LineComparisonProgram {
 			System.out.println("Line_1 is  Greater than Line_2");
 		else
 			System.out.println("Line_1 is  Less than Line_2");
+	}
+
+	// Computation
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Welcome to Line Comparison Computation Program");
+		LineComparisonProgram line = new LineComparisonProgram();
+		line.compareTo();
 	}
 
 }
