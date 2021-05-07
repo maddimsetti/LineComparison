@@ -36,10 +36,13 @@ public class LineComparisonProgram {
 		String str1 = String.valueOf(length_Of_Line1);
 		String str2 = String.valueOf(length_Of_Line2);
 		System.out.println(length_Of_Line1 + " .equals " + length_Of_Line2 + ": " + str1.equals(str2));
-		if (str1.equals(str2) == true)
-			System.out.println("Lines Are Equal");
+		System.out.println(length_Of_Line1 + " .compareTo " + length_Of_Line2 + ": " + str1.compareTo(str2));
+		if (str1.compareTo(str2) == 0)
+			System.out.println("Both Lines are Equal");
+		else if (str1.compareTo(str2) > 0)
+			System.out.println("Line_1 is  Greater than Line_2");
 		else
-			System.out.println("Lines Are Not Equal");
+			System.out.println("Line_1 is  Less than Line_2");
 	}
 
 }
